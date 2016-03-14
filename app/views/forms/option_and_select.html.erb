@@ -1,12 +1,34 @@
 <h2>Option and Select</h2>
 
 <form class="js-submit" action="/forms" method="post">
-  <!-- your code here -->
+  <select>
+    <option value="C#">C#</option>
+    <option value="PHP">PHP</option>
+    <option value="Ruby">Ruby</option>
+    <option value="Python">Python</option>
+  </select>
   <button type="submit">Submit</button>
 </form>
 
 <script type="text/javascript">
-  $(".js-submit").on("submit", function(event){
-    event.preventDefault();
-  });
+$(".js-submit").on("submit", function(event){
+  event.preventDefault();
+});
 </script>
+
+
+<!--
+
+When would you use this?
+
+A: For any dropdown menu choices
+
+Any related attributes?
+
+A: Every option should have a value attribute
+
+How do you get the value using javascript
+
+A: Event listener for clicking the submit button
+
+-->
