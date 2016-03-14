@@ -1,5 +1,11 @@
 <h2>Search</h2>
 
+<form method="get" action="/forms">
+  <label for="search">Search: </label>
+  <input type="text" name="q" id="search">
+  <button type="submit">Search</button>
+</form>
+
 <br>
 
 <% @languages.each do |language| %>

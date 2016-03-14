@@ -5,6 +5,10 @@ class FormsController < ApplicationController
   end
 
   def index
-    @languages = Language.all
+    if params[:q]
+      @languages = Language.where(name: params[:q])
+    else
+      @languages = Language.all
+    end
   end
 end
